@@ -55,11 +55,12 @@ contract Colegio {
     }
     
     //Mira si la nota es mayor o igual a 60%(60/100), devuelve true o false dependiendo de si es mayor a 60% o no
-    function Aprobo(string memory _Materia) public view returns (bool) {
-        require (Notas_Materia[_Materia] >= 60);
-        return true;
-       
-    }
+     function aprobo ( string  memory  _materia ) public  view  return ( bool ) {
+        if (notas_materia[_materia] >=  60 ){
+            devolver  verdadero ;
+        } más {
+            devolver  falso ;
+        }
 
     //hace el promedio de
     function promedio() public view returns (uint) {
