@@ -56,11 +56,11 @@ contract Colegio {
     
     //Mira si la nota es mayor o igual a 60%(60/100), devuelve true o false dependiendo de si es mayor a 60% o no
     function Aprobo(string memory _Materia) public view returns (bool) {
-       if (Notas_Materia[_Materia] >= 60){
+            if (Notas_Materia[_Materia] >= 60){
             return true;
-        } else {
+            } else {
             return false;
-        }
+             }
        
        
     }
